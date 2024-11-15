@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico N° 8: "Posicionamiento básico"</title>
+</head>
+<body>
+    <h1>Trabajo Práctico N° 8: "Posicionamiento básico"</h1>
+    <h2>Por: Emanuel Olivera</h2>
+    <h3>1. ¿Cuál es la diferencia principal entre position relative y position absolute?</h3>
+    <p><strong>Position relative</strong> posiciona a un elemento de acuerdo al flujo normal del documento, y lo desplaza en relación a sí mismo, sin afectar la posición de ningún otro elemento.</p>
+    <p><strong>Position absolute</strong> remueve a un elemento del flujo normal del documento, sin crearse espacio alguno para el mismo en el esquema de la página, y lo posiciona relativo a su caja padre más cercana</p>
+    <h3>2. ¿Qué valor de position se utiliza por defecto para los elementos HTML?</h3>
+    <p>Se utiliza <strong>position static</strong> como valor por defecto</p>
+    <h3>3. ¿Qué propiedad se utiliza para establecer la capa de apilamiento de elementos superpuestos?</h3>
+    <p>La propiedad CSS <strong>z-index</strong> es utilizada para controlar el apilamiento de elementos posicionados en una página web. Determina el orden de visualización de elementos superpuestos, especificando que elemento aparece delante de los demás.</p>
+    <h3>4. ¿Cuándo se utiliza position fixed en CSS?</h3>
+    <p>Se utiliza cuando queremos que un elemento se mantenga fijo en su posición respecto a la ventana del navegador, incluso si se desplaza la página.</p>
+    <h3>5. ¿Cómo se comporta un elemento con position sticky al desplazarse?</h3>
+    <p>Con el posicionamiento sticky, un elemento se comporta como "pegajoso" en relación a su contenedor o al área de visualización del navegador. Es decir, es tratado como un elemento posicionado relativamente hasta que cruza un umbral especificado, en cuyo punto se trata como fijo hasta que alcanza el límite de su padre.</p>
+    <h3>6. ¿Cuál es el valor de position adecuado para un elemento que se desea que siga el flujo normal del documento?</h3>
+    <p>El valor adecuado para que un elemento se mantenga en el flujo normal del documento es position relative.</p>
+    <h3>7. ¿Cuál es la forma más común de mover un elemento con position relative?</h3>
+    <p>La forma más común de desplazar un elemento desde su posición original es utilizando las propiedades top, bottom, left o right.</p>
+    <h3>8. ¿En qué casos se puede utilizar z-index para controlar el orden de apilamiento de elementos?</h3>
+    <p>Se puede aplicar esta propiedad cuando en nuestra página web hay elementos con position fixed o sticky que pasarán sobre otros elementos, y queremos que sean visibles.</p>
+    <h3>9. ¿Qué sucede cuando dos elementos tienen el mismo valor de z-index?</h3>
+    <p>Cuando dos elementos tienen el mismo valor de z-index, estos se mostrarán uno encima del otro.</p>
+    <h3>10. ¿Cuál es la principal diferencia entre position sticky y position fixed?</h3>
+    <p>La principal diferencia entre position sticky y position fixed es que los elementos con position sticky se mantienen en su lugar hasta que se alcanza un punto determinado, mientras que los elementos con position fixed siempre están en la misma posición en la pantalla.</p>
+    <h3>11. En el siguiente ejemplo, ¿el valor top y right es en relación a qué elemento?</h3>
+    <img src="assets/Ejemplo.png" alt="">
+    <p>Los valores de las propiedades top y right son en relación al &lt;body&gt; del documento, ya que la caja .box no tiene una caja padre posicionada como tal.</p>
+    <h3>12. En el ejemplo anterior ¿qué agregarías para que la caja hija esté dentro de la caja padre?</h3>
+    <p>Para que la caja hija .box esté "dentro" de la caja padre .container, solo hay que añadirle position relative a esta última. De esta forma, la caja .box se posicionará en relación a su caja padre.</p>
+</body>
+</html>
